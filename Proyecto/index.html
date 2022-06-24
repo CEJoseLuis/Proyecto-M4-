@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEAPI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">POKEDEX</a>
+      <button onclick="showAll()" type="button" class="btn btn-dark">Mostrar todos los Pokemon</button>     
+      <form class="d-flex input-group w-auto">
+        <input
+          type="search"
+          class="form-control rounded"
+          placeholder="ID o nombre"
+          aria-label="Search"
+          aria-describedby="search-addon"
+          id="busqueda"
+        />
+        <button onclick="buscar()" type="button" class="btn btn-outline-danger">Buscar</button>     
+      </form>
+    </div>
+  </nav>
+<body>
+    <div class="container mt-5 mb-3 pt-5 pb-1">
+      <div class="row justify-content-around" id="tarjeta">
+        
+                
+      </div>
+    </div>
+    
+    <nav aria-label="Page navigation example" class="container-fluid">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item" onclick="showAll()"><a class="page-link link-danger" href="#">1</a></li>
+        <li class="page-item" onclick="showAll(45,88)"><a class="page-link link-danger" href="#">2</a></li>
+        <li class="page-item" onclick="showAll(89,132)"><a class="page-link link-danger" href="#">3</a></li>
+        <li class="page-item" onclick="showAll(133,176)"><a class="page-link link-danger" href="#">4</a></li>
+        <li class="page-item" onclick="showAll(177,220)"><a class="page-link link-danger" href="#">5</a></li>
+        <li class="page-item" onclick="showAll(221,264)"><a class="page-link link-danger" href="#">6</a></li>
+        <li class="page-item" onclick="showAll(265,308)"><a class="page-link link-danger" href="#">7</a></li>
+        <li class="page-item" onclick="showAll(309,352)"><a class="page-link link-danger" href="#">8</a></li>
+        <li class="page-item" onclick="showAll(353,396)"><a class="page-link link-danger" href="#">9</a></li>
+        <li class="page-item" onclick="showAll(397,440)"><a class="page-link link-danger" href="#">10</a></li>
+        <li class="page-item" onclick="showAll(441,484)"><a class="page-link link-danger" href="#">11</a></li>
+        <li class="page-item" onclick="showAll(485,528)"><a class="page-link link-danger" href="#">12</a></li>
+        <li class="page-item" onclick="showAll(529,572)"><a class="page-link link-danger" href="#">13</a></li>
+        <li class="page-item" onclick="showAll(573,616)"><a class="page-link link-danger" href="#">14</a></li>
+        <li class="page-item" onclick="showAll(617,660)"><a class="page-link link-danger" href="#">15</a></li>
+        <li class="page-item" onclick="showAll(661,704)"><a class="page-link link-danger" href="#">16</a></li>
+        <li class="page-item" onclick="showAll(705,748)"><a class="page-link link-danger" href="#">17</a></li>
+        <li class="page-item" onclick="showAll(749,792)"><a class="page-link link-danger" href="#">18</a></li>
+        <li class="page-item" onclick="showAll(793,836)"><a class="page-link link-danger" href="#">19</a></li>
+        <li class="page-item" onclick="showAll(837,880)"><a class="page-link link-danger" href="#">20</a></li>
+        <li class="page-item" onclick="showAll(881,898)"><a class="page-link link-danger" href="#">21</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+<script src="main.js"></script>
+</body>
+</html>
